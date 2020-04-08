@@ -1,0 +1,22 @@
+{
+  "name": "monorepos",
+  "description": "Playground with monorepos",
+  "author": "Truong Van Phu <phugodness@gmail.com>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "start": "lerna run start"
+  },
+  "workspaces": [
+    "src/applications/*",
+    "src/packages/*"
+  ],
+  "engines": {
+    "yarn": ">=1.17.3"
+  }
+}
